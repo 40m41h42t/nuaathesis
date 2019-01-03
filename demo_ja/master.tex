@@ -16,8 +16,8 @@
 \makedeclare
 \frontmatter
 \makeabstract
-\nuaatableofcontents
-\nuaalistoffigurestables
+\expandafter\nuaatableofcontents
+\expandafter\nuaalistoffigurestables
 %\include{content/abbr}
 
 \mainmatter
@@ -29,7 +29,7 @@
 % include appendix here (if any)
 
 \backmatter
-\bibliographystyle{nuaathesis}   % biber style
+\bibliographystyle{nuaabib}   % biber style
 \bibliography{bib/sample}   % biber database
 \include{content/manref}    % if reference is hand-coded
 

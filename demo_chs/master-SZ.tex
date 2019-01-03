@@ -1,6 +1,7 @@
 \documentclass[
   lang=cn,
-  degree=bachelor,type=paper,
+  degree=master,
+  zhuanshuo,
   openany,oneside
   % openright,blankleft,twoside
 ]{nuaathesis}
@@ -19,6 +20,8 @@
 % 如果需要调整目录层级数量的话，取消下一行注释，数字含义: 0=chapter, 1=section, 2=subsection
 % \setcounter{tocdepth}{1}
 \expandafter\nuaatableofcontents
+\expandafter\nuaalistoffigurestables
+\include{content/abbr}
 
 \mainmatter
 
@@ -29,7 +32,6 @@
 
 \appendix
 % 如果需要附录的话，在这里 include
-\include{content/ex_duplicate}
 \include{content/ex_postscript}
 
 \backmatter
@@ -40,5 +42,6 @@
 \include{content/manref}
 
 \include{content/acknowledge}
+\include{content/backmatter}
 
 \end{document}
